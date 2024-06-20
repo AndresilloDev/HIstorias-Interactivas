@@ -5,6 +5,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import mx.edu.utez.historiasinteractivas.dao.UsuarioDao;
 import mx.edu.utez.historiasinteractivas.model.Usuario;
 
@@ -23,6 +24,8 @@ public class UsuarioServlet extends HttpServlet {
 
         if (usuario == null) {
             System.out.println("Usuario incorrecto cuh");
+            HttpSession session = req.getSession();
+            session.setAttribute("mensaje", "Usuario incorrecto cuh");
             resp.sendRedirect("/login");
         } else {
             System.out.printf("Login válido");
