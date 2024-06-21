@@ -29,7 +29,7 @@
         <div class="card mx-auto">
           <div class="card-body">
             <h1 class="card-title text-left">Iniciar Sesión</h1>
-            <form id="loginForm" action="#" method="post" autocomplete="off">
+            <form id="loginForm" action="login" method="post" autocomplete="off">
               <label class="label">
                 <input name="user" type="text" placeholder=" " class="input" required>
                 <span class="label_name">Usuario o Correo electrónico</span>

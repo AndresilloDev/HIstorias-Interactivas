@@ -31,4 +31,9 @@ public class UsuarioDao {
         }
         return usuario;
     }
+
+    public String insert(Usuario user){
+
+        return "";
+    }
 }

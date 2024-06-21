@@ -1,32 +1,41 @@
 package mx.edu.utez.historiasinteractivas.model;
 
 public class Usuario {
-    private String nombre;
-    private String contra;
+    private String user;
+    private String name;
+    private String password;
+
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String contra) {
-        this.nombre = nombre;
-        this.contra = contra;
+    public Usuario(String user, String name, String password) {
+        this.name = name;
+        this.password = password;
+        this.user = user;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getContra() {
-        return contra;
+    public String getPassword() {
+        return password;
     }
 
-    public void setContra(String contra) {
-        this.contra = contra;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
+    public String getUser() {
+        return user;
+    }
 
+    public void setUser(String user) {
+        this.user = user;
+    }
 }
